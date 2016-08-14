@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#list first 20 processes by RAM usage
+
+watch `ps -e -o pid,vsz,comm= | sort -n -r| head -20`
